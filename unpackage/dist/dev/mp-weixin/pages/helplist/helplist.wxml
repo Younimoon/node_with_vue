@@ -1,0 +1,1 @@
+<view><view class="container"><view class="box"><view class="Box"><view class="head"><image bindtap="{{a}}" src="/static/addlist.png" mode=""></image><image bindtap="{{b}}" src="/static/like.png" mode=""></image></view></view></view><view class="content"><lists class=".lists" u-i="2ecc2103-0" bind:__l="__l"></lists></view></view></view>

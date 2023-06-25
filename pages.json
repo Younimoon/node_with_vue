@@ -1,0 +1,133 @@
+{
+	// 如果您是通过uni_modules形式引入uview-plus，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/helplist/helplist",
+			"style": {
+				
+			}
+		}
+		,{
+            "path" : "pages/myself/myself",
+            "style" :                                                        {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/chat/chat",
+            "style" :                                                                   
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+			
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/regester/regester",
+            "style" :                                                        {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/orders/orders",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myinfo/myinfo",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+			"path": "pages/integral/integral",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path": "pages/feedback/feedback",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		},{
+			"path":"pages/createlist/createlist",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/appraise/appraise",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myfavorite/myfavorite",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/userinfo/userinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "校园帮",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/helplist/helplist",
+				"text": "首页",
+				"iconPath": "/static/helplist-noactive.png",
+				"selectedIconPath": "static/helplist-active .png"
+			},
+			{
+				"pagePath": "pages/chat/chat",
+				"text": "消息",
+				"iconPath": "/static/chat-noactive.png",
+				"selectedIconPath": "/static/chat-active.png"
+			},
+			{
+				"pagePath": "pages/myself/myself",
+				"text": "我的",
+				"iconPath": "/static/myself-noactive.png",
+				"selectedIconPath": "/static/myself-active.png"
+	
+			}
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-album": "../../uni_modules/uview-plus/components/u-album/u-album",
+    "u-alert": "../../uni_modules/uview-plus/components/u-alert/u-alert",
+    "u--textarea": "../../uni_modules/uview-plus/components/u--textarea/u--textarea",
+    "u-button": "../../uni_modules/uview-plus/components/u-button/u-button",
+    "u-popup": "../../uni_modules/uview-plus/components/u-popup/u-popup"
+  }
+}

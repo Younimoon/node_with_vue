@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .userinfo {
+  width: 90%;
+  height: 25%;
+  margin: 3vh ;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container .userinfo .bgm {
+  width: 90%;
+  height: 25%;
+  opacity: 0.7;
+  position: absolute;
+  z-index: -1;
+}
+.container .userimg uni-image {
+  width: 22vw;
+  height: 13vh;
+  border-radius: 50%;
+}
+.container .user {
+  width: 95%;
+  height: 70%;
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.container .user .box_one {
+  width: 30%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 1.5vw;
+  border-radius: 5%;
+  background-color: whitesmoke;
+}
+.container .user .box_one uni-image {
+  width: 60%;
+  height: 70%;
+}
+.container .user .box_one .dingdan {
+  color: red;
+  display: flex;
+  justify-content: space-around;
+}
+.container uni-button {
+  width: 80%;
+  height: 8%;
+  margin-bottom: 2vh;
+}

@@ -1,0 +1,149 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.list .avatar {
+  width: 12%;
+  height: 6.5vh;
+}
+.list .avatar image {
+  width: 90%;
+  height: 90%;
+  margin-top: 2vh;
+  border-radius: 50%;
+}
+.list .center {
+  width: 80%;
+}
+.list .center .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list .center .header .good {
+  width: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.list .center .header .good .type {
+  font: large "微软雅黑";
+  /*设置字体和字体大小*/
+  letter-spacing: 2vw;
+  font-style: oblique;
+  font-weight: bold;
+  /*设置字体粗细*/
+  text-align: center;
+  /*设置文字居中*/
+  color: #f35626;
+  /*设置文字颜色*/
+  animation: swing 2s infinite;
+  /*设置动画*/
+}
+@keyframes swing {
+  /*创建动画*/
+20% {
+    transform: rotate(15deg);
+}
+40% {
+    transform: rotate(-15deg);
+}
+60% {
+    transform: rotate(5deg);
+}
+80% {
+    transform: rotate(-5deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+.list .center .header .good image {
+  width: 9vw;
+  height: 6vh;
+}
+.list .center .helpcontent .help {
+  font-size: 1rem;
+  margin-bottom: 1vw;
+}
+.list .center .helpcontent .allappraise {
+  font-family: serif;
+  background-color: #f2f2f2;
+  border-radius: 5%;
+}
+.list .center .helpcontent .allappraise .appraise {
+  padding-left: 2vw;
+  padding-bottom: 0.5vh;
+  border-bottom: 1px solid #cccccc;
+}
+.list .center .helpcontent .allappraise .appraise text {
+  color: #756f71;
+}
+.list .center .helpcontent .allappraise .appraise .userappraise {
+  margin-top: 0.5vh;
+  font-size: small;
+}
+.list .center .helpcontent .allappraise .checkmore {
+  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: #5677fc;
+}
+.list .center .helpcontent image {
+  width: 5vw;
+  height: 3vh;
+  float: right;
+  margin-bottom: 1vh;
+}
+.list .show {
+  display: block;
+  width: 90vw;
+  position: absolute;
+  top: 40vh;
+  animation: myshow 2s linear;
+}
+@keyframes myshow {
+from {
+    opacity: 1;
+}
+to {
+    opacity: 0;
+}
+}
+.list .noshow {
+  display: none;
+}
+.none {
+  width: 100%;
+  display: none;
+}
+.block {
+  width: 100%;
+  display: block;
+}

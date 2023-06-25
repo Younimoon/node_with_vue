@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/helplist/helplist",
+    "pages/myself/myself",
+    "pages/chat/chat",
+    "pages/login/login",
+    "pages/regester/regester",
+    "pages/orders/orders",
+    "pages/myinfo/myinfo",
+    "pages/integral/integral",
+    "pages/feedback/feedback",
+    "pages/createlist/createlist",
+    "pages/appraise/appraise",
+    "pages/myfavorite/myfavorite",
+    "pages/userinfo/userinfo"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "校园帮",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/helplist/helplist",
+        "text": "首页",
+        "iconPath": "/static/helplist-noactive.png",
+        "selectedIconPath": "static/helplist-active .png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "消息",
+        "iconPath": "/static/chat-noactive.png",
+        "selectedIconPath": "/static/chat-active.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "/static/myself-noactive.png",
+        "selectedIconPath": "/static/myself-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

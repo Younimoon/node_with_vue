@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container .box {
+  display: block;
+  border-bottom: 1px solid #f2f2f2;
+  height: 6vh;
+}
+.container .box .Box {
+  width: 100%;
+  margin-top: 1vh;
+  position: fixed;
+}
+.container .box .Box .head {
+  display: flex;
+  justify-content: space-between;
+}
+.container .box .Box image {
+  width: 8vw;
+  height: 4vh;
+  background-color: aliceblue;
+  border-radius: 50%;
+  text-align: center;
+}
+.container .content {
+  width: 100vw;
+  height: 92vh;
+  overflow-y: auto;
+}
