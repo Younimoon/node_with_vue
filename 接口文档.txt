@@ -1,0 +1,15 @@
+/api
+post /regester  username password
+post /login  username password
+
+
+/my 
+get /userinfo  username
+
+
+
+数据库表
+appraise：帮助的评论和helplist为多对一关系，通过helpid连接
+favorite——list：喜欢的list和list通过helid连接
+helplist：帮助列表
+user:用户信息，用户登录就会插入
