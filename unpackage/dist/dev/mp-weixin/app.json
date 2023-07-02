@@ -2,7 +2,7 @@
   "pages": [
     "pages/helplist/helplist",
     "pages/myself/myself",
-    "pages/chat/chat",
+    "pages/news/news",
     "pages/login/login",
     "pages/regester/regester",
     "pages/orders/orders",
@@ -12,11 +12,11 @@
     "pages/createlist/createlist",
     "pages/appraise/appraise",
     "pages/myfavorite/myfavorite",
-    "pages/userinfo/userinfo"
+    "pages/userinfo/userinfo",
+    "pages/newsdetail/newsdetail"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "校园帮",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
@@ -24,19 +24,19 @@
     "list": [
       {
         "pagePath": "pages/helplist/helplist",
-        "text": "首页",
+        "text": "互助列表",
         "iconPath": "/static/helplist-noactive.png",
         "selectedIconPath": "static/helplist-active .png"
       },
       {
-        "pagePath": "pages/chat/chat",
-        "text": "消息",
+        "pagePath": "pages/news/news",
+        "text": "社会资讯",
         "iconPath": "/static/chat-noactive.png",
         "selectedIconPath": "/static/chat-active.png"
       },
       {
         "pagePath": "pages/myself/myself",
-        "text": "我的",
+        "text": "我的信息",
         "iconPath": "/static/myself-noactive.png",
         "selectedIconPath": "/static/myself-active.png"
       }

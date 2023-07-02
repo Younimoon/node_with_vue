@@ -129,14 +129,13 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       }, Istoken.value ? {
         b: common_vendor.unref(userinfo).userpic,
         c: common_vendor.o(changeavatar),
-        d: common_vendor.t(common_vendor.unref(userinfo).username),
-        e: common_vendor.t(common_vendor.unref(userinfo).id)
+        d: common_vendor.t(common_vendor.unref(userinfo).username)
       } : {}, {
-        f: !Istoken.value
+        e: !Istoken.value
       }, !Istoken.value ? {
-        g: common_vendor.o(Tologin)
+        f: common_vendor.o(Tologin)
       } : {}, {
-        h: common_vendor.f(info, (item, index, i0) => {
+        g: common_vendor.f(info, (item, index, i0) => {
           return {
             a: item.img,
             b: common_vendor.t(item.name),
@@ -144,9 +143,9 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
             d: index
           };
         }),
-        i: Istoken.value
+        h: Istoken.value
       }, Istoken.value ? {
-        j: common_vendor.o(
+        i: common_vendor.o(
           //@ts-ignore
           (...args) => gooutinfo && gooutinfo(...args)
         )

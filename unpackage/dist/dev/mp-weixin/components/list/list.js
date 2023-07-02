@@ -52,16 +52,16 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
       getlists();
       getAllappraise();
     });
-    function getlists() {
-      utils_api.getHelp().then((res) => {
-        res.forEach((item) => {
-          if (item.imgs) {
-            const image2 = item.imgs.split(",");
-            item.imgs = image2;
-          }
-        });
-        lists.value = res;
+    async function getlists() {
+      const res = await utils_api.getHelp();
+      res.forEach((item) => {
+        if (item.imgs) {
+          const image2 = item.imgs.split(",");
+          item.imgs = image2;
+        }
       });
+      lists.value = res;
+      console.log(lists);
     }
     async function getAllappraise() {
       const res = await utils_api.getallappraise();

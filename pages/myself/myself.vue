@@ -147,9 +147,9 @@ function gooutinfo(){
 				<view class="userimg" @click="changeavatar">
 					<image :src="userinfo.userpic" mode=""></image>
 				</view>
-				<view class="login">
-					<h1 style="font-size: larger;margin-bottom: 1vh;">{{userinfo.username}}</h1>
-					<span>用户ID:{{userinfo.id}}</span>
+				<view class="login" style="display: flex;align-items: center;">
+					昵称：<h1 style="font-size: larger;margin-bottom: 1vh;">{{userinfo.username}}</h1>
+					<!-- <span>用户ID:{{userinfo.userid}}</span> -->
 				</view>
 			</view>
 			<view class="userinfo" v-if="!Istoken">

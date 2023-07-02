@@ -15,7 +15,7 @@ const changeInput = ref<string>("disabled")
 let  userinfo = reactive<usermsg>({
 	username:username.value ? username.value :null,
 	phonenumber:"不存在请登录",
-	id:"不存在请登录"
+	userid:"不存在请登录"
 })
 fun()
 async function fun(){
@@ -25,6 +25,7 @@ async function fun(){
 				userinfo[item] = res[0][item] 
 			 }
 		 })
+		 // console.log(userinfo);
 		 instance.proxy.$forceUpdate()
 	 })
 }
@@ -79,7 +80,7 @@ function changenumber(e:any){
 					用户ID:
 				</view> 
 				<view >
-					<input type="text" :value="userinfo.id" disabled="changeInput">
+					<input type="text" :value="userinfo.userid" disabled="changeInput">
 				</view>
 			</view>
 		</view>

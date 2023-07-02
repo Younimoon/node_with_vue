@@ -121,7 +121,7 @@ require("./uni_modules/uview-plus/libs/function/platform.js");
 if (!Math) {
   "./pages/helplist/helplist.js";
   "./pages/myself/myself.js";
-  "./pages/chat/chat.js";
+  "./pages/news/news.js";
   "./pages/login/login.js";
   "./pages/regester/regester.js";
   "./pages/orders/orders.js";
@@ -132,6 +132,7 @@ if (!Math) {
   "./pages/appraise/appraise.js";
   "./pages/myfavorite/myfavorite.js";
   "./pages/userinfo/userinfo.js";
+  "./pages/newsdetail/newsdetail.js";
 }
 const _sfc_main = {
   onLaunch: function() {

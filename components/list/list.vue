@@ -38,20 +38,22 @@ onShow(()=>{
 })
 
 
-function getlists(){
-	getHelp().then(res =>{
-		res.forEach(item=>{
-			if(item.imgs){
-				const image = item.imgs.split(',');
-				item.imgs = image
-			}
-		}) 
+async function getlists(){
+	const res = await getHelp()
+	res.forEach(item=>{
+		if(item.imgs){
+			const image = item.imgs.split(',');
+			item.imgs = image
+		}
+	})	
 		lists.value = res	
+		console.log(lists);
 		//代码不需要因为每次获取评论的时候都会先对有所有的list的评论进行赋空
 		// lists.value.forEach(item=>{
 		// 	item.Appraise = []
 		// })		
-	})
+	
+	
 	
 }
 
@@ -147,7 +149,6 @@ function myinfo(name){
 </script>
 <template>
 	<view>
-		
 		<view class="list" v-for="(item,index) in lists " :key="item.helpid">
 			<view class="avatar" @click="myinfo(item.username)" >
 				<image :src="item.userpic"></image>

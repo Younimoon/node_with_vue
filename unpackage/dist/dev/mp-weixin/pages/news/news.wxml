@@ -1,0 +1,1 @@
+<view class="container"><view wx:for="{{a}}" wx:for-item="item" class="ranking" bindtap="{{item.b}}"><view class="ranking_num">{{item.a}}</view><label class="ranking_news"></label></view></view>

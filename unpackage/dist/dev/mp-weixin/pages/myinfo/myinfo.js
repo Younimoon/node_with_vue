@@ -16,7 +16,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     let userinfo = common_vendor.reactive({
       username: username.value ? username.value : null,
       phonenumber: "不存在请登录",
-      id: "不存在请登录"
+      userid: "不存在请登录"
     });
     fun();
     async function fun() {
@@ -54,7 +54,7 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
         d: common_vendor.unref(userinfo).phonenumber,
         e: changeInput.value,
         f: common_vendor.o(changenumber),
-        g: common_vendor.unref(userinfo).id,
+        g: common_vendor.unref(userinfo).userid,
         h: common_vendor.o(changeinfo),
         i: common_vendor.o(confirminfo)
       };
